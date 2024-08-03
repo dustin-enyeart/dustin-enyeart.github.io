@@ -13,3 +13,5 @@ if __name__ == '__main__':
     # Freeze
     freezer = ff.Freezer(app)
     freezer.freeze()
+    # Move stuff up one level
+    os.system("mv build/about/index.html build/about.html")

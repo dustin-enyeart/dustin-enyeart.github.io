@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dustin Enyeart</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+    .page-header {
+        display: flex; 
+        background-image: url("{{ url_for('static', filename='background-frame.png') }}");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 3px solid white;
+        justify-content: center; /* align horizontal */
+        align-items: center; /* align vertical */
+    }
+    .header-text {
+        text-align: center;
+    }
+    .profile-photo {
+        width: 10em;
+        height: 10em;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        border: 3px solid white;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 50em;
+    }
+    </style>
+</head>
+
+
+<body>
+{# Icon Links #}
+<div class="icon-links">
+    <p>
+    {# Git #}
+    <a
+    href="https://gitlab.com/users/dustin_lee/projects">
+        <img class="icon-link-image"
+        src="{{ url_for('static', filename='git.svg') }}">
+    </a>
+    {# LinkedIn #}
+    <a
+    href="https://www.linkedin.com/in/dustin-lee-enyeart-6a15582aa/">
+        <img class="icon-link-image"
+        src="{{ url_for('static', filename='linkedin.svg') }}">
+    </a>
+    {# Resume #} 
+    <a 
+    href="{{ url_for('static', filename='enyeart.pdf') }}">
+        <img class="icon-link-image"
+        src="{{ url_for('static', filename='resume.svg') }}">
+    </a>
+    {# Mail #}
+    <a
+    href="https://gitlab.com/users/dustin_lee/projects">
+        <img class="icon-link-image"
+        src="{{ url_for('static', filename='mail.svg') }}">
+    </a>
+    </p>
+</div>
+
+
+{# Page Header #}
+<div class="page-header">
+    {# Profile photo #}
+    <p>
+    <img class="profile-photo"
+        src="{{ url_for('static', filename='profile.jpeg') }}">
+    </p>
+    {# Title #}
+    <p class="header-text"> 
+        <span style="font-size: 2em"> 
+        The Homepage of
+        </span>
+        <br>
+        <span style="font-size: 4em">
+        Dustin Lee Enyeart
+        </span>
+    </p>
+</div>
+
+
+{# About Me #}
+<div class="about"> 
+    <h2> About Me </h2>
+    <p>
+        I am a PhD student in mathematics a Purdue University. I have broad interests across mathematics, physics and programming. My dissertation is on scientific machine learning. 
+    </p>
+</div>
+
+
+{# Books #}
+
+{# Projects #}
+
+{# Publications #}
+
+
+{# About Page #}
+<div class="footer">
+<hr>
+    <p style="font-size: 0.8em;"> 
+        <a href="{{ url_for('about') }}"> About Page </a>
+    </p>
+</div>
+
+
+</body>
+
+</html>
+
+

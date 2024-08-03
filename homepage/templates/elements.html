@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>The Elements</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+    .page-header {
+        display: flex; 
+        background-image: url("{{ url_for('static', filename='elements-background-frame.png') }}");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 3px solid white;
+        justify-content: center; /* align horizontal */
+        align-items: center; /* align vertical */
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 50em;
+    }
+    </style>
+</head>
+
+
+<body>
+{# Icon Links #}
+<div class="icon-links">
+    <p>
+    {# Home #}
+    <a
+    href="{{ url_for('home') }}">
+        <img class="icon-link-image"
+        src="{{ url_for('static', filename='home.svg') }}">
+    </a>
+</div>
+
+
+{# Page Header #}
+<div class="page-header" style="color: rgb(5, 5, 5)">
+    <p> 
+        <span style="font-size: 2em;"> 
+        The Elements of
+        </span>
+        <br>
+        <span style="font-size: 4em">
+        Mathematics and Physics
+        </span>
+    </p>
+</div>
+
+
+{# Icon Links #}
+<div class="icon-links" style="text-align: center; margin-top: 30px;">
+    <p>
+    {# Publisher #}
+    <a
+    href="">
+        <img class="icon-link-image"
+        src="{{ url_for('static', filename='publisher.svg') }}">
+    </a>
+    {# Amazon #}
+    <a
+    href="https://www.amazon.com/">
+        <img class="icon-link-image"
+        src="{{ url_for('static', filename='amazon.svg') }}">
+    </a>
+    {# Goodreads? #}
+    {# Git #}
+    <a
+    href="https://gitlab.com/dustin_lee/elements">
+        <img class="icon-link-image"
+        src="{{ url_for('static', filename='git.svg') }}">
+    </a>
+    {# PDF #} 
+    <a 
+    href="{{ url_for('static', filename='') }}">
+        <img class="icon-link-image"
+        src="{{ url_for('static', filename='pdf.svg') }}">
+    </a>
+    </p>
+</div>
+
+
+{# Summary #}
+<div class="about"> 
+    <p>
+        This is an awesome book that is coming soon.  
+    </p>
+</div>
+
+
+{# Error Submission #}
+
+
+{# Footer #}
+<div class="footer">
+<hr>
+    <p style="font-size: 0.8em;"> 
+        <a href="{{ url_for('home') }}"> Homepage </a>
+    </p>
+</div>
+
+
+</body>
+
+</html>
+

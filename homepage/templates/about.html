@@ -18,12 +18,12 @@
 
 
 <body>
-{# Icon Links #}
+{# Home Link #}
 <div class="icon-links">
     <p>
     {# Home #}
-    <a
-    href="{{ url_for('home') }}" style="color:black">
+    <a class="icon-link"
+    href="{{ url_for('home') }}">
         <img class="icon-link-image"
         src="{{ url_for('static', filename='home.svg') }}">
     </a>

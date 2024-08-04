@@ -14,10 +14,20 @@ body {
     width: 100%;
     text-decoration: none;
 }
+.icon-link {
+    width: 100%;
+    text-decoration: none;
+    color: black; 
+}
 .icon-link-image {
     width: 2em;
     height: 2em;
     margin-right: 1em;
+    text-decoration: none;
+    color: black; 
+}
+.icon-link-image:hover {
+    transform: scale(1.2); 
 }
 
 h1, h2, h3, h4, h5, h6 {

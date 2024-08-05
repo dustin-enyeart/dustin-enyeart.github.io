@@ -1,8 +1,10 @@
-<!DOCTYPE html>
 <html>
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <title>Dustin Enyeart</title>
+    <link rel="icon" type="image/png"
+    href="/static/integral.svg">
 
     <link rel="stylesheet" type="text/css" href="/static/style.css">
 
@@ -27,13 +29,6 @@
         border-radius: 50%;
         border: 3px solid white;
     }
-
-    .footer {
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        width: 50em;
-    }
     </style>
 </head>
 
@@ -41,7 +36,7 @@
 <body>
 
 <div class="icon-link">
-    <p>
+<p>
     
     <a class="icon-link"
     href="https://gitlab.com/users/dustin_lee/projects">
@@ -61,12 +56,51 @@
         src="/static/resume.svg">
     </a>
     
-    <a class="icon-link"
-    href="https://gitlab.com/users/dustin_lee/projects">
+    <button id="emailButton">
+        <span>
         <img class="icon-link-image"
-        src="/static/mail.svg">
-    </a>
-    </p>
+            src="/static/mail.svg">
+        </span>
+    </button>
+    <div id="emailModal" class="modal">
+    <div class="modal-content">
+        <span class="close">×</span>
+        <p>
+            <span style="font-size:1.2em">
+                <strong>Email</strong> 
+            </span>
+            <br>
+            <button class="copy-button"
+            onclick="copyText('email-text')"
+            data-tooltip="Copied!">
+                <img class="copy-icon"
+                src="/static/copy.svg">
+            </button>
+            <span id="email-text"
+            style="font-family:monospace; font-size:1.2em">
+                dustin.enyeart@pm.me
+            </span>
+        </p>
+        <span style="font-size:1.2em">
+            <strong>Public Key</strong> 
+        </span>
+        <span style="font-size:0.8em">
+            (for optional encrypting)
+        </span>
+        <br>
+        <button class="copy-button"
+        onclick="copyText('key-text')"
+        data-tooltip="Copied!">
+                <img class="copy-icon"
+                src="/static/copy.svg">
+            </button>
+            <span id="key-text" style="font-family:monospace; font-size:1.2em">
+                685354D9D328D54C49F91BFF90F4A9355545CCA9
+            </span>
+        </p>
+    </div>
+    </div>
+</p>
 </div>
 
 
@@ -94,7 +128,7 @@
 <div class="about"> 
     <h2> 🚀 About Me</h2>
     <p>
-        I am a PhD student in mathematics a Purdue University. I have broad interests across mathematics, physics and programming. My dissertation is on scientific machine learning. Also, I think that Rachel is lame🤣
+        I am a PhD candidate in mathematics a Purdue University. I have broad interests across applied mathematics, theoretical physics, computational physics and computer science. My dissertation is on scientific machine learning. 
     </p>
 </div>
 
@@ -110,10 +144,14 @@
 <div class="footer">
 <hr>
     <p> 
-        <a href="/about/"> About Page </a>
+        <a class="footer-link" href="/about/">
+            About Page
+        </a>
     </p>
 </div>
 
+
+<script src="static/scripts.js"></script>
 
 </body>
 

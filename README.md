@@ -18,3 +18,5 @@ The file `main.py` deals with addresses and page rendering.
 All HTML files are in `templates`. 
 The directory `static` contains the style file `style.css` and the script file `scripts`, which are used for the HTML file. 
 The directory `static` also contains all images.
+
+It uses a Google tag with [Google Analytics](https://analytics.google.com/analytics) to track activity. 

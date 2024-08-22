@@ -3,7 +3,7 @@
 ## Summary 
 
 This is the code for the homepage of Dustin Enyeart. 
-Currently, it is hosted at [`dustin-enyeart.github.io`](dustin-enyeart.github.io). 
+Currently, it is hosted at [`https://dustin-enyeart.github.io`](https://dustin-enyeart.github.io). 
 
 ## Running
 

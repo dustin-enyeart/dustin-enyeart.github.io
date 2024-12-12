@@ -45,6 +45,7 @@
 
 <body>
 
+
 <div class="icon-link">
 <p>
     
@@ -66,11 +67,12 @@
         src="/static/linkedin.svg">
     </a>
      
-    <a class="icon-link"
-    href="/static/enyeart.pdf">
+    <button id="resumeButton">
+        <span>
         <img class="icon-link-image"
-        src="/static/resume.svg">
-    </a>
+            src="/static/resume.svg">
+        </span>
+    </button>
     
     <button id="emailButton">
         <span>
@@ -78,6 +80,25 @@
             src="/static/mail.svg">
         </span>
     </button>
+    
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <p>
+                <a
+                 href="/static/resume-enyeart.pdf">
+                    Resume
+                </a>
+            </p>
+            <p>
+                <a
+                 href="/static/cv-enyeart.pdf">
+                    CV
+                </a>
+            </p>
+    </div>
+    </div>
+    
     <div id="emailModal" class="modal">
     <div class="modal-content">
         <span class="close">×</span>
@@ -97,25 +118,27 @@
                 dustin.enyeart@pm.me
             </span>
         </p>
-        <span style="font-size:1.2em">
-            <strong>Public Key</strong> 
-        </span>
-        <span style="font-size:0.8em">
-            (for optional encrypting)
-        </span>
-        <br>
-        <button class="copy-button"
-        onclick="copyText('key-text')"
-        data-tooltip="Copied!">
-                <img class="copy-icon"
-                src="/static/copy.svg">
-            </button>
-            <span id="key-text" style="font-family:monospace; font-size:1.2em">
-                685354D9D328D54C49F91BFF90F4A9355545CCA9
+        <p>
+            <span style="font-size:1.2em">
+                <strong>Public Key</strong> 
             </span>
-        </p>
+            <span style="font-size:0.8em">
+                (for optional encrypting)
+            </span>
+            <br>
+            <button class="copy-button"
+            onclick="copyText('key-text')"
+            data-tooltip="Copied!">
+                    <img class="copy-icon"
+                    src="/static/copy.svg">
+                </button>
+                <span id="key-text" style="font-family:monospace; font-size:1.2em">
+                    685354D9D328D54C49F91BFF90F4A9355545CCA9
+                </span>
+        </p>    
     </div>
     </div>
+    <!--  -->
 </p>
 </div>
 
@@ -141,21 +164,45 @@
 
 
 
-<div class="about"> 
+<div class="section"> 
     <h2> About 🚀 </h2>
     <p>
         Dustin Enyeart is a PhD candidate in mathematics at Purdue University. He has broad interests across applied mathematics, scientific computing, theoretical physics, computational physics, computer science and technical writing. His dissertation is on scientific machine learning. 
+        Stuff
     </p>
 </div>
 
 
 
-
-
-
-
-
-
+<div class="section"> 
+    <h2> Publications </h2>
+    <p>
+        <a class="footer-link"
+        href="https://hammer.purdue.edu/articles/thesis/Some_Studies_in_Operator_Learning_for_Solving_Differential_Equations/27936021?file=50903178">
+            Some Studies in Operator Learning for Solving Differential Equations        
+        </a>
+        (Thesis)
+    </p>
+    <p>
+        <a class="footer-link"
+        href="https://arxiv.org/abs/2412.04578">
+            Loss Terms and Operator Forms of Koopman Autoencoders
+        </a>
+        (2024)
+    </p>
+    <p>
+        <a class="footer-link"
+        href="https://arxiv.org/abs/2412.06686">
+            Some Best Practices in Operator Learning
+        </a>
+        (2024)
+    </p>
+    <p>
+        <a class="footer-link"
+        href="https://arxiv.org/abs/2412.07811">
+            Adversarial Autoencoders in Operator Learning
+        </a> (2024)
+    </p>
 
 
 
@@ -170,6 +217,7 @@
 
 
 <script src="static/scripts.js"></script>
+
 
 </body>
 

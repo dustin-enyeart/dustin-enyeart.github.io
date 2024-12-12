@@ -1,21 +1,42 @@
 /*
-Email Modal
+Resume Modal
 */
-var modal = document.getElementById("emailModal");
-var btn = document.getElementById("emailButton");
-var span = document.getElementsByClassName("close")[0];
+var resume_modal = document.getElementById("resumeModal");
+var resume_btn = document.getElementById("resumeButton");
+var resume_span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
-    modal.style.display = "block";
+resume_btn.onclick = function() {
+    resume_modal.style.display = "block";
 }
 
-span.onclick = function() {
-    modal.style.display = "none";
+resume_span.onclick = function() {
+    resume_modal.style.display = "none";
 }
 
 window.onclick = function(event) {
-    if (event.target == modal) {
-            modal.style.display = "none";
+    if (event.target == resume_modal) {
+            resume_modal.style.display = "none";
+    }
+}
+
+/*
+Email Modal
+*/
+var email_modal = document.getElementById("emailModal");
+var email_btn = document.getElementById("emailButton");
+var email_span = document.getElementsByClassName("close")[1];
+
+email_btn.onclick = function() {
+    email_modal.style.display = "block";
+}
+
+email_span.onclick = function() {
+    email_modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == email_modal) {
+            email_modal.style.display = "none";
     }
 }
 

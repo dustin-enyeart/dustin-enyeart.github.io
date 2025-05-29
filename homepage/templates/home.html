@@ -67,13 +67,12 @@
         src="{{ url_for('static', filename='linkedin.svg') }}">
     </a>
     {# Resume and CV#} 
-    <!-- <button id="resumeButton">
+    <button id="resumeButton">
         <span>
         <img class="icon-link-image"
             src="{{ url_for('static', filename='resume.svg') }}">
         </span>
     </button>
-    -->
     {# Mail #}
     <button id="emailButton">
         <span>
@@ -81,25 +80,6 @@
             src="{{ url_for('static', filename='mail.svg') }}">
         </span>
     </button> 
-    {# Resume Model #}
-    <!-- <div id="resumeModal" class="modal">
-        <div class="modal-content">
-            <span class="close">×</span>
-            <p>
-                <a
-                 href="{{ url_for('static', filename='resume-enyeart.pdf') }}">
-                    Resume
-                </a>
-            </p>
-            <p>
-                <a
-                 href="{{ url_for('static', filename='cv-enyeart.pdf') }}">
-                    CV
-                </a>
-            </p>
-        </div>
-    </div> 
-    -->
     {# Email Model #}
     <div id="emailModal" class="modal">
     <div class="modal-content">
@@ -140,6 +120,25 @@
         </p>    
     </div>
     </div>
+    {# Resume Model #}
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <p>
+                <a
+                 href="{{ url_for('static', filename='resume-enyeart.pdf') }}">
+                    Resume
+                </a>
+            </p>
+            <p>
+                <a
+                 href="{{ url_for('static', filename='cv-enyeart.pdf') }}">
+                    CV
+                </a>
+            </p>
+        </div>
+    </div> 
+   
     <!--  -->
 </p>
 </div>
@@ -171,7 +170,7 @@
     <p>
         Dustin Enyeart is an engineer at Stellar Science.
         He has a PhD in mathematics from Purdue University with a dissertation on scientific machine learning. 
-        he ahs broad interests across applied mathematics, physics, coding and technical writing.
+        He has broad interests across applied mathematics, physics, coding and technical writing.
     </p>
 </div>
 
